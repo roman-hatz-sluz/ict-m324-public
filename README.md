@@ -1,7 +1,5 @@
 # ict-m324
 
-# Tutorial: Automatisierung und Deployment eines Node.js-Projekts mit Docker, CI/CD und Portainer
-
 ## Voraussetzungen:
 
 - Grundkenntnisse in Node.js und JavaScript
