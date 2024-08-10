@@ -70,3 +70,45 @@ eslint@9.x, globals, @eslint/js
   npm run format
   ```
 - Sie sollten sehen, dass Prettier den Code formatiert hat, indem es die Leerzeichen entfernt hat.
+
+### Testing mit Jest
+
+- Installieren Sie Jest in Ihrem Projekt:
+  ```bash
+  npm install jest
+  ```
+- Erstellen Sie eine Testdatei, z.B. `index.test.js`:
+
+  ```javascript
+  // index.test.js
+  const sum = (a, b) => a + b
+
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3)
+  })
+  ```
+
+- Fügen Sie das folgende Skript in Ihre `package.json` Datei ein, um die Tests auszuführen:
+  ```json
+  "scripts": {
+    "test": "jest"
+  }
+  ```
+- Ändern Sie die Funktion `sum` in der `index.js` Datei absichtlich so, dass sie falsche Ergebnisse liefert, z.B.:
+  ```javascript
+  // index.js
+  function sum(a, b) {
+    return a + b + 1
+  }
+  ```
+- Führen Sie die Tests aus, um den Fehler zu sehen:
+  ```bash
+  npm run test
+  ```
+- Sie sollten sehen, dass der Test fehlschlägt. Korrigieren Sie die Funktion `sum`, um den Test erfolgreich bestehen zu lassen.
+
+### Build Automatisierung
+
+- Ändern Sie das Script `start` in `package.json` wie folgt:
+  Bevor die Node Applikation gestartet wird, wird der Code formatiert, gelintet und getestet.
+- Bonus: sorgen Sie dafür, dass die Node Applikation gestartet wird.
