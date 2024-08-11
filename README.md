@@ -40,7 +40,7 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
 
 ### Git-Befehle ausführen
 
-- **Verwenden Sie grundlegende Git-Befehle** und dokumentieren Sie jeden Schritt in der `README.md`:
+- **Verwenden Sie grundlegende Git-Befehle** und dokumentieren Sie _jeden Schritt in der `README.md`_:
 
   - `git status`: Überprüfen Sie den aktuellen Status des Repositories und identifizieren Sie unversionierte Änderungen.
   - `git add .`: Fügen Sie alle Änderungen zum Staging-Bereich hinzu.
@@ -54,7 +54,7 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
   ```
 - Ändern Sie index.html: Fügen Sie neuen Inhalt zur Datei hinzu.
 - **Committen und pushen Sie die ihren neuen Branch**
-- Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist. Dokumentieren Sie alle Git Befehle in der README.md.Datei.
+- Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist. _Dokumentieren Sie alle Git Befehle in der README.md.Datei_.
 
 ### Pull Request ausführen
 
