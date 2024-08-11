@@ -67,3 +67,4 @@ Ein Pull Request oder Merge Request bezeichnet in der Versionsverwaltung einen A
 - Releasen Sie eine Website mit GitHub Pages.
 - Recherchieren Sie, wie eine Website mit GitHub Pages funktioniert.
 - Beim Inhalt ihrer Website sind Sie frei.
+- Als Resultat bekommen Sie eine URL, die öfffentlich erreichbar ist und den Inhalt der Datei index.html als Website darstellt. 
