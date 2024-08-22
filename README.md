@@ -2,11 +2,12 @@
 
 ## Voraussetzungen:
 
-- GitHub-Account
-- Installieren Sie NPM und ein Bash/Terminal Tool.
-  https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+- Installieren Sie NPM [und ein Bash/Terminal Tool.](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Schritt 1: Build-Automatisierung mit Node.js
+
+- Installieren Sie NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM installiert ist. 
 
 1. **Projekt Setup**:
 
