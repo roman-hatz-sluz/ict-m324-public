@@ -2,9 +2,8 @@
 
 ## Voraussetzungen:
 
-- Grundkenntnisse in Node.js und JavaScript
 - GitHub-Account
-- Installiere NPM und ein Bash/Terminal Tool.
+- Installieren Sie NPM und ein Bash/Terminal Tool.
   https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
 ## Schritt 1: Build-Automatisierung mit Node.js
