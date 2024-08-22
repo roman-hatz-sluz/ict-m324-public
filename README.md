@@ -5,9 +5,9 @@
 - Installieren Sie NPM [und ein Bash/Terminal Tool.](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Schritt 1: Build-Automatisierung mit Node.js
+- Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM korrekt installiert ist. 
+- Wenn nein, folgen Sie den Anweisungen hier (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Überprüfen Sie mit obigen Befehlen, ob die Installation erfolgreich war. 
 
-- Installieren Sie NPM (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM installiert ist. 
 
 1. **Projekt Setup**:
 
