@@ -3,7 +3,6 @@
 ## Voraussetzungen:
 
 - Grundkenntnisse in Node.js und JavaScript
-- Grundkenntnisse in Docker
 - GitHub-Account
 - Installiere NPM und ein Bash/Terminal Tool.
   https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
