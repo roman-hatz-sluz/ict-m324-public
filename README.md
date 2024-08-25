@@ -1,8 +1,5 @@
 # ict-m324
 
-## Voraussetzungen:
-
-- Installieren Sie NPM [und ein Bash/Terminal Tool.](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Schritt 1: Build-Automatisierung mit Node.js
 - Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM korrekt installiert ist. 
