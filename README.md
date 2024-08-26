@@ -1,6 +1,6 @@
 # ict-m324
 
-
+# Building and Package Management with NodeJS (JavaScript)
 
 ## Voraussetzungen
 - Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM korrekt installiert ist. 
