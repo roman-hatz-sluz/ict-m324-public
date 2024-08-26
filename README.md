@@ -1,14 +1,10 @@
 # ict-m324
 
-# Tutorial: Automatisierung und Deployment eines Node.js-Projekts mit Docker, CI/CD und Portainer
 
-## Voraussetzungen:
 
-- Grundkenntnisse in Node.js und JavaScript
-- Grundkenntnisse in Docker
-- GitHub-Account
-- Installiere NPM und ein Bash/Terminal Tool.
-  https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+## Voraussetzungen
+- Überprüfen Sie in einem Terminal mit  `node -v` und  `npm -v`, ob NPM korrekt installiert ist. 
+- Wenn nein, folgen Sie den Anweisungen hier (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Überprüfen Sie mit obigen Befehlen, ob die Installation erfolgreich war. 
 
 ## Build-Automatisierung mit Node.js
 
