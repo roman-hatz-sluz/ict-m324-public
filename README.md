@@ -33,9 +33,11 @@ eslint@9.x, globals, @eslint/js
     "lint": "eslint ."
   }
   ```
-- Erstellen Sie absichtlich einen Fehler in der `index.js` Datei, z.B. indem Sie mit `console.log` eine Variable ausgeben, die es nicht gibt.
-
-- Führen Sie das Linting aus, um den Fehler zu sehen:
+- Erstellen Sie die Datei `index.js`. Führen Sie die Datei mit `node index.js` aus.
+```js
+   console.log(undefinedVariable)
+  ```
+- Führen Sie das Linting aus:
   ```bash
   npm run lint
   ```
