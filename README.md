@@ -77,7 +77,7 @@ eslint@9.x, globals, @eslint/js
   ```bash
   npm install jest
   ```
-- Erstellen Sie eine Testdatei, z.B. `index.test.js`:
+- Erstellen Sie eine Testdatei `index.test.js`:
 
   ```javascript
   // index.test.js
@@ -111,4 +111,3 @@ eslint@9.x, globals, @eslint/js
 
 - Ändern Sie das Script `start` in `package.json` wie folgt:
   Bevor die Node Applikation gestartet wird, wird der Code formatiert, gelintet und getestet.
-- Bonus: sorgen Sie dafür, dass die Node Applikation gestartet wird.
