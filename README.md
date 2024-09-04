@@ -55,7 +55,7 @@ npm install chalk
   "type": "module",
 ```
 
-- Installieren Sie weitere NPM Pakete bei https://www.npmjs.com/. Achten Sie darauf, welche Dateien im Ordner node_modules abgelegt werden.
+- Installieren Sie ein beliebiges weiteres NPM Paket. Suchen Sie ein Paket bei https://www.npmjs.com/ aus. Achten Sie darauf, welche Dateien im Ordner node_modules abgelegt werden.
 
 ## Software Pakete updaten
 
