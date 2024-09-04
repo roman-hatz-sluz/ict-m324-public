@@ -41,11 +41,13 @@ eslint@9.x, globals, @eslint/js
   ```bash
   npm run lint
   ```
-- Sie sollten eine Fehlermeldung erhalten, die in etwa so aussieht:
-  `error  'undefinedVarialbe' is not defined  no-undef`
+- Sie sollten eine Fehlermeldung erhalten, die so aussieht:
+  `error  'undefinedVariable' is not defined  no-undef`
 - Fügen Sie einen weiteren Fehler im JS ein.
-  Sie sollten eine Fehlermeldung erhalten, die in etwa so aussieht:
+  Sie sollten eine Fehlermeldung erhalten, die so aussieht:
   ` error  'unusedVariable' is assigned a value but never used`
+- Lesen Sie https://hackernoon.com/10-eslint-rules-you-should-use 
+  Bauen Sie eine der Regeln ein und fügen Sie einen entsprechenden Fehler im JS ein, damit eslint eine Fehlermeldung ausgibt. 
 
 ### Formatting mit Prettier
 
