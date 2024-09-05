@@ -99,7 +99,7 @@ eslint@9.x, globals, @eslint/js
     "test": "jest"
   }
   ```
-- Ändern Sie die Funktion `sum` in der `index.js` Datei absichtlich so, dass sie falsche Ergebnisse liefert, z.B.:
+- Ändern Sie die Funktion `sum` in der `index.test.js` Datei absichtlich so, dass sie falsche Ergebnisse liefert, z.B.:
   ```javascript
   // index.js
   function sum(a, b) {
