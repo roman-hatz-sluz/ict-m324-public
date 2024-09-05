@@ -43,7 +43,7 @@
 
 ## Software Pakete installieren
 
-- Installieren Sie ein Paket, das die Konsole einfärbt, zum Beispiel `chalk`:
+- Installieren Sie ein Paket, das die Konsole einfärbt: https://www.npmjs.com/package/chalk:
 
 ```bash
 npm install chalk
@@ -54,8 +54,6 @@ npm install chalk
 ```
   "type": "module",
 ```
-
-- Installieren Sie ein beliebiges weiteres NPM Paket. Suchen Sie ein Paket bei https://www.npmjs.com/ aus. Achten Sie darauf, welche Dateien im Ordner node_modules abgelegt werden.
 
 ## Software Pakete updaten
 
@@ -72,3 +70,6 @@ npm install chalk
 - Es tritt ein Problem auf. Achten Sie auf die Fehlerausgabe.
 - Welche Version von welchem Paket ist die Mindestanforderung?
 - Für Security ist es wichtig, dass Software stets geupdated wird. Nutzen Sie npm-check-updates, um alle Pakete zu updaten.
+
+## NPM Registry durchsuchen
+- Installieren Sie ein beliebiges weiteres NPM Paket. Suchen Sie ein Paket bei https://www.npmjs.com/ aus. Achten Sie darauf, welche Dateien im Ordner node_modules abgelegt werden.
