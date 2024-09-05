@@ -35,6 +35,7 @@ eslint@9.x, globals, @eslint/js
   ```
 - Erstellen Sie die Datei `index.js`. Führen Sie die Datei mit `node index.js` aus.
 ```js
+   // index.js
    console.log(undefinedVariable)
   ```
 - Führen Sie das Linting aus:
