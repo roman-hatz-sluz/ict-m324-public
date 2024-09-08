@@ -1,0 +1,67 @@
+version: "3.8"
+
+services:
+  # MySQL
+  mysql:
+    image: mysql:latest
+    container_name: mysql-demo
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - mynet
+
+  # PostgreSQL
+  postgres:
+    image: postgres:latest
+    container_name: postgres-demo
+    environment:
+      POSTGRES_USER: demo
+      POSTGRES_PASSWORD: demo
+      POSTGRES_DB: demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynet
+
+  # SQLite (wird als persistentes Volumen verwendet, da SQLite eine dateibasierte DB ist)
+  sqlite:
+    image: nouchka/sqlite3
+    container_name: sqlite-demo
+    volumes:
+      - sqlite_data:/db
+    networks:
+      - mynet
+    command: tail -f /dev/null # SQLite läuft in einem statischen Zustand
+
+  # MongoDB
+  mongo:
+    image: mongo:latest
+    container_name: mongo-demo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: demo
+      MONGO_INITDB_ROOT_PASSWORD: demo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - mynet
+
+volumes:
+  mysql_data:
+  postgres_data:
+  sqlite_data:
+  mongo_data:
+
+networks:
+  mynet:
+    driver: bridge
