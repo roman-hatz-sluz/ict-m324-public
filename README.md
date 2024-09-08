@@ -15,4 +15,11 @@ Fix them.
 - `git fetch`: Das braucht es, damit Sie den Befehl unten ausführen können. https://git-scm.com/docs/git-fetch 
 - `git checkout task-1+2-solution-to-fix`
 - `npm install`
-- `npm run start`: Schauen Sie im _package.json_ was beim Skript _start_ passiert. 
+- `npm run start`: Schauen Sie im _package.json_ was beim Skript _start_ passiert.
+
+# Fix it
+- Das Ziel ist, dass die Applikation läuft. 
+- Schauen Sie sich den Code an (index.js), was sollte das Resultat sein?
+- Fixen Sie die Linter Errors
+- Fixen Sie die Tests
+ 
