@@ -12,4 +12,7 @@ Fix them.
 
 # Setup
 - Klonen Sie dieses Repository und öffnen Sie den Code in ihrer IDE. 
-- `git fetch` git clone
+- `git fetch`: Das braucht es, damit Sie den Befehl unten ausführen können. https://git-scm.com/docs/git-fetch 
+- `git checkout task-1+2-solution-to-fix`
+- `npm install`
+- `npm run start`: Schauen Sie im _package.json_ was beim Skript _start_ passiert. 
