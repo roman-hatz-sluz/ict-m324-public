@@ -48,6 +48,7 @@ Ein Pull Request oder Merge Request bezeichnet in der Versionsverwaltung einen A
 - Wenn Sie ihren neuen Branch gepusht haben, erscheint auf der Startseite ihres Repositories ein Button "Compare & pull request". Klicken Sie auf diesen Button, um einen Pull Request zu erstellen.
 - Erstellen Sie ein Code Review, indem Sie als Kommentar "LGTM" (Looks good to me) schreiben und anschliessend den Pull Request mergen. Der Feature Branch sollte automatisch gelöscht werden.  
 
+
 ## 3. GitHub Pages verwenden
 
 - Releasen Sie eine Website mit GitHub Pages.
