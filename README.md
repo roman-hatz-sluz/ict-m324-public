@@ -19,26 +19,13 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
 
 ### Dateien initialisieren
 
-- **Erstellen Sie eine `README.md`-Datei**: Diese Datei dient als Dokumentation und Übersicht Ihres Projekts.
-  Verwenden Sie die folgende Vorlage:
-
-```
-1. Grundlegende Git-Befehle
-...
-
-2. Branch erstellen
-...
-
-
-```
-
 - **Erstellen Sie eine `index.html`-Datei**: Diese Datei dient zur Demonstration grundlegender Git-Befehle.
 
 ## 2. Git verwenden
 
 ### Git-Befehle ausführen
 
-- **Verwenden Sie grundlegende Git-Befehle** und dokumentieren Sie _jeden Schritt in der `README.md`_:
+- **Verwenden Sie folgende Git-Befehle** 
 
   - `git status`: Überprüfen Sie den aktuellen Status des Repositories und identifizieren Sie unversionierte Änderungen.
   - `git add .`: Fügen Sie alle Änderungen zum Staging-Bereich hinzu.
