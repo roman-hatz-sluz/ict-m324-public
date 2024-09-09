@@ -1,9 +1,7 @@
 # ict-m324
 
-DevOps-Prozesse mit Tools unterstützen
+DevOps-Prozesse mit Tools unterstützen:
 Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zeit verfolgen können. Git zeichnet die Änderungen auf, die Sie an einem Projekt vornehmen, speichert diese Änderungen und ermöglicht es Ihnen dann, bei Bedarf darauf zuzugreifen.
-
-# 🛠️ GitHub Challenge: Dein Projektworkflow im Fokus
 
 ## 1. Einrichtung: Ihr Entwicklungs-Setup
 
