@@ -64,4 +64,9 @@ Geben Sie eine **Tag-Version** ein (z.B. `v1.0.0`).
 - Releasen Sie eine Website mit GitHub Pages.
 - Recherchieren Sie, wie eine Website mit GitHub Pages funktioniert.
 - Beim Inhalt ihrer Website sind Sie frei.
-- Als Resultat bekommen Sie eine URL, die öfffentlich erreichbar ist und den Inhalt der Datei index.html als Website darstellt. 
+- Als Resultat bekommen Sie eine URL, die öfffentlich erreichbar ist und den Inhalt der Datei index.html als Website darstellt.
+
+### Zusatzaufgabe
+- Schreiben Sie einen Prozess für die Konvertierung von Markdown in HTML, den Sie automatisiert ausführen können (PowerShell/Bash). Beispiel: `sh convert.sh` konvertiert die Datei README.md in HTML und erstellt die Datei README.html.
+- Automatisieren Sie den Prozess. Das Ziel ist, dass nicht vergessen wird README.html zu updaten, wenn sich README.md ändert. 
+ 
