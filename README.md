@@ -14,7 +14,7 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
 
 ### Repository erstellen und klonen
 
-- **Erstellen Sie ein neues Repository**: Legen Sie ein neues public Repository auf GitHub.com an und klonen Sie es auf Ihr lokales System. Wenn Sie GitHub Desktop verwenden, braucht es nur einen Klick: https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-a-repository-from-github-to-github-desktop
+- **Erstellen Sie ein neues Repository**: Legen Sie ein neues _public_ Repository auf GitHub.com an und klonen Sie es auf Ihr lokales System.  
 - **Öffnen Sie das Repository in der IDE**: Nutzen Sie Ihre IDE, um das geklonte Repository für die Entwicklung vorzubereiten.
 
 ### Dateien initialisieren
@@ -39,13 +39,14 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
   ```
 - Ändern Sie index.html: Fügen Sie neuen Inhalt zur Datei hinzu.
 - **Committen und pushen Sie die ihren neuen Branch**
-- Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist. _Dokumentieren Sie alle Git Befehle in der README.md.Datei_.
+- Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist.  
 
-### Pull Request ausführen
+### Pull Request öffnen
 
 Ein Pull Request oder Merge Request bezeichnet in der Versionsverwaltung einen Arbeitsablauf, Quellcode-Änderungen in Softwareprojekten vorzunehmen.
 
 - Wenn Sie ihren neuen Branch gepusht haben, erscheint auf der Startseite ihres Repositories ein Button "Compare & pull request". Klicken Sie auf diesen Button, um einen Pull Request zu erstellen.
+- Erstellen Sie ein Code Review, indem Sie als Kommentar "LGTM" (Looks good to me) schreiben und anschliessend den Pull Request mergen. Der Feature Branch sollte automatisch gelöscht werden.  
 
 ## 3. GitHub Pages verwenden
 
