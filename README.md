@@ -38,7 +38,7 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
   git checkout -b feature-branch
   ```
 - Ändern Sie index.html: Fügen Sie neuen Inhalt zur Datei hinzu.
-- **Committen und pushen Sie die ihren neuen Branch**
+- Committen Sie die Änderung im HTML und pushen Sie die ihren neuen Branch.
 - Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist.  
 
 ### Pull Request öffnen
@@ -49,8 +49,18 @@ Ein Pull Request oder Merge Request bezeichnet in der Versionsverwaltung einen A
 - Erstellen Sie ein Code Review, indem Sie als Kommentar "LGTM" (Looks good to me) schreiben und anschliessend den Pull Request mergen. Der Feature Branch sollte automatisch gelöscht werden.  
 
 
-## 3. GitHub Pages verwenden
+## 3. Release erstellen und deployen 
+### Release erstellen 
+- Klicken Sie im Menü des Repositories auf den Reiter **Releases**.
+- Klicken Sie auf **Create a new release**.
+Geben Sie eine **Tag-Version** ein (z.B. `v1.0.0`).
+   - Sie können auch einen Branch oder Commit auswählen, auf dem das Release basieren soll.
+- Geben Sie einen **Titel** für das Release ein (z.B. "Erstes offizielles Release").
+- Fügen Sie eine **Beschreibung** hinzu, die die Änderungen oder neuen Features des Releases beschreibt.
+- Optional: Sie können Dateien oder Builds als **Assets** zum Release hinzufügen, indem Sie sie hochladen.
+- Klicken Sie auf **Publish release**, um das Release zu erstellen und öffentlich zu machen.
 
+### Website auf GitHub Pages veröffentlichen
 - Releasen Sie eine Website mit GitHub Pages.
 - Recherchieren Sie, wie eine Website mit GitHub Pages funktioniert.
 - Beim Inhalt ihrer Website sind Sie frei.
