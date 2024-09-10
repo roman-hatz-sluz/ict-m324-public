@@ -49,7 +49,21 @@ Ein Pull Request oder Merge Request bezeichnet in der Versionsverwaltung einen A
 - Erstellen Sie ein Code Review, indem Sie als Kommentar "LGTM" (Looks good to me) schreiben und anschliessend den Pull Request mergen. Der Feature Branch sollte automatisch gelöscht werden.  
 
 
-## 3. Release erstellen und deployen 
+## 3. Git Merge-Konflikt
+### Setup
+- Erstellen Sie einen neuen Branch _conflict-change_
+- Ändern Sie etwas auf der ersten Zeile im index.html
+- Pushen Sie ihren neuen Branch und erstellen Sie einen Pull Request. 
+- Wechseln Sie auf den main Branch.
+- Ändern Sie etwas auf der ersten Zeile im index.html.
+- Pushen Sie die Änderung in den main Branch.
+- Öffnen Sie nun ihren Pull Request für den Branch _conflict-change_.
+- Unten sollte sichtbar sein, dass der Pull Request nicht gemerged werden kann wegen einem Konflikt.
+- Lösen Sie den Konflikt. Mergen Sie dafür den main Branch in den Branch _conflict-change_ (git checkout conflict-change && git merge main). Verwenden Sie geeignete Tools wie Visual Studio. Beispiel hier: https://www.youtube.com/watch?v=ybCxPHzRJfA
+Das Resultat sollte sein, dass der Stand im main übernommen wird. Verwenden Sie in ihren Konflikt Editor, ohne den Code manuell zu ändern.  
+- Mergen Sie anschliessend den Pull Request. 
+
+## 4. Release erstellen und deployen 
 ### Release erstellen 
 - Klicken Sie im Menü des Repositories auf den Reiter **Releases**.
 - Klicken Sie auf **Create a new release**.
