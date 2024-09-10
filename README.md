@@ -20,3 +20,11 @@ Lokale Datenbank mit Docker.
 - Testen Sie, ob Sie eine Tabelle erstellen können (per Command Line oder grafisches Tool).
 - Verbinden Sie ihr Backend mit der Docker Datenbank.
 - Stellen Sie sicher, dass die Docker Datenbank läuft, wenn Sie ihre Applikation starten. 
+Bei NPM: verwenden Sie scripts im package.json. 
+Bei C#: z.B mit einem Bash Skript `start.sh`: 
+```
+#!/bin/bash
+docker-compose up -d
+dotnet run
+```
+ 
