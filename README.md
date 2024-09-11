@@ -2,6 +2,17 @@
 
 ## Schritt 2: Linting, Formatting und Testing des Projekts
 
+- Erstellen Sie die Datei `index.js`. Führen Sie die Datei mit `node index.js` aus.
+
+```js
+// index.js
+export const sum = (a, b) => {
+  return a + b + 1;
+};
+console.log(sum(1, 2));
+console.log(myUndefinedVariable);
+```
+
 ### Linting mit ESLint
 
 - Installieren Sie ESLint in Ihrem Projekt:
@@ -28,16 +39,13 @@ eslint@9.x, globals, @eslint/js
 ```
 
 - Fügen Sie das folgende Skript in Ihre `package.json` Datei ein, um Ihren Code zu überprüfen:
+
   ```json
   "scripts": {
     "lint": "eslint ."
   }
   ```
-- Erstellen Sie die Datei `index.js`. Führen Sie die Datei mit `node index.js` aus.
-```js
-   // index.js
-   console.log(undefinedVariable)
-  ```
+
 - Führen Sie das Linting aus:
   ```bash
   npm run lint
@@ -47,8 +55,8 @@ eslint@9.x, globals, @eslint/js
 - Fügen Sie einen weiteren Fehler im JS ein.
   Sie sollten eine Fehlermeldung erhalten, die so aussieht:
   ` error  'unusedVariable' is assigned a value but never used`
-- Lesen Sie https://hackernoon.com/10-eslint-rules-you-should-use 
-  Bauen Sie eine der Regeln ein und fügen Sie einen entsprechenden Fehler im JS ein, damit eslint eine Fehlermeldung ausgibt. 
+- Lesen Sie https://hackernoon.com/10-eslint-rules-you-should-use
+  Bauen Sie eine der Regeln ein und fügen Sie einen entsprechenden Fehler im JS ein, damit eslint eine Fehlermeldung ausgibt.
 
 ### Formatting mit Prettier
 
@@ -76,41 +84,40 @@ eslint@9.x, globals, @eslint/js
   ```
 - Sie sollten sehen, dass Prettier den Code formatiert hat, indem es die Leerzeichen entfernt hat.
 
-### Testing mit Jest
+### Testing mit Mocha
 
-- Installieren Sie Jest in Ihrem Projekt:
+- Installieren Sie Mocha in Ihrem Projekt:
   ```bash
-  npm install jest
+  npm install mocha
   ```
 - Erstellen Sie eine Testdatei `index.test.js`:
 
   ```javascript
-  // index.test.js
-  const sum = (a, b) => a + b
-
-  test('adds 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3)
-  })
+  // Datei: index.test.js
+  // TODO: Setzen Sie die korrekten Imports ein
+  describe("sum", () => {
+    it("should add 1 + 2 to equal 3", () => {
+      assert.equal(sum(1, 2), 3);
+    });
+  });
   ```
 
 - Fügen Sie das folgende Skript in Ihre `package.json` Datei ein, um die Tests auszuführen:
+
   ```json
   "scripts": {
-    "test": "jest"
+    "test": "node node_modules/.bin/mocha ./"
   }
   ```
-- Ändern Sie die Funktion `sum` in der `index.test.js` Datei absichtlich so, dass sie falsche Ergebnisse liefert, z.B.:
-  ```javascript
-  // index.js
-  function sum(a, b) {
-    return a + b + 1
-  }
-  ```
+
+  Hinweis: Wenn es bei Windows nicht klappt, versuchen Sie: `node --experimental-vm-modules node_modules/.bin/mocha ./`
+
 - Führen Sie die Tests aus, um den Fehler zu sehen:
   ```bash
   npm run test
   ```
 - Sie sollten sehen, dass der Test fehlschlägt. Korrigieren Sie die Funktion `sum`, um den Test erfolgreich bestehen zu lassen.
+- Fügen Sie einen weiteren Test hinzu, der zwei Dezimalzahlen addiert.
 
 ### Build Automatisierung
 
