@@ -25,20 +25,16 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
 
 ### Git-Befehle ausführen
 
-- **Verwenden Sie folgende Git-Befehle** 
-
-  - `git status`: Überprüfen Sie den aktuellen Status des Repositories und identifizieren Sie unversionierte Änderungen.
-  - `git add .`: Fügen Sie alle Änderungen zum Staging-Bereich hinzu.
-  - `git commit -m "Initial commit"`: Speichern Sie die Änderungen in der Historie des Repositories.
-  - `git push`: Übertragen Sie die lokalen Änderungen zum Remote-Repository auf GitHub.
-  - `git log`: Zeigen Sie die Commit-Historie an, um den Fortschritt zu überprüfen.
-
-- **Erstellen Sie einen neuen Branch für die Feature-Entwicklung**:
+- Wechseln Sie auf den main branch. Erstellen Sie einen neuen Branch für die Feature-Entwicklung. 
   ```bash
   git checkout -b feature-branch
   ```
 - Ändern Sie index.html: Fügen Sie neuen Inhalt zur Datei hinzu.
+- `git status`: Überprüfen Sie den aktuellen Status des Repositories und identifizieren Sie unversionierte Änderungen.
+- `git add .`: Fügen Sie alle Änderungen zum Staging-Bereich hinzu.
 - Committen Sie die Änderung im HTML und pushen Sie die ihren neuen Branch.
+- `git commit -m "Initial commit"`: Speichern Sie die Änderungen in der Historie des Repositories.
+- `git log`: Zeigen Sie die Commit-Historie an, um den Fortschritt zu überprüfen.
 - Kontrollieren Sie auf github.com, ob ihr neuer Branch da ist.  
 
 ### Pull Request öffnen
