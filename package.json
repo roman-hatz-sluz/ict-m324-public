@@ -8,7 +8,7 @@
     "start": "npm run lint && npm run format && npm run test && node index.js",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "test": "node_modules/.bin/mocha ./"
+    "test": "mocha ./"
   },
   "repository": {
     "type": "git",
