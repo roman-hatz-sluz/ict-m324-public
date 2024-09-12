@@ -10,16 +10,16 @@ Git ist eine Software, mit der Sie Änderungen an einem Projekt im Laufe der Zei
 1. **Installieren Sie Ihre bevorzugte IDE**: Wählen Sie eine IDE wie Visual Studio Code und installieren Sie diese, um eine effiziente Entwicklungsumgebung zu schaffen.
 2. **Installieren Sie Git**: [Git Installation](https://git-scm.com/downloads) – das zentrale Tool für die Versionskontrolle Ihres Projekts.
 3. **Erstellen Sie ein GitHub-Konto**: Registrieren Sie sich auf GitHub, um Ihre Projekte online zu verwalten. [GitHub Registrierung](https://github.com/join)
-4. **Installieren Sie GitHub Desktop**: Empfehlung: nutzen Sie GitHub Desktop, um Ihre Repositories visuell zu verwalten. [GitHub Desktop herunterladen](https://desktop.github.com/)
+4. **Installieren Sie GitHub Desktop**: Empfehlung: Falls Sie noch kein Tool haben, nutzen Sie GitHub Desktop, um Ihre Repositories visuell zu verwalten. [GitHub Desktop herunterladen](https://desktop.github.com/)
 
 ### Repository erstellen und klonen
 
-- **Erstellen Sie ein neues Repository**: Legen Sie ein neues _public_ Repository auf GitHub.com an und klonen Sie es auf Ihr lokales System.  
+- **Erstellen Sie ein neues Repository**: Legen Sie ein neues _public_ Repository auf GitHub.com an. Wählen Sie die Option "README.md" erstellen, damit es schon einen main Branch hat. Klonen Sie dann das Remote Repository auf Ihr lokales System.  
 - **Öffnen Sie das Repository in der IDE**: Nutzen Sie Ihre IDE, um das geklonte Repository für die Entwicklung vorzubereiten.
 
 ### Dateien initialisieren
 
-- **Erstellen Sie eine `index.html`-Datei**: Diese Datei dient zur Demonstration grundlegender Git-Befehle.
+- **Erstellen Sie eine `index.html`-Datei**: Diese Datei dient zur Demonstration grundlegender Git-Befehle. Pushen Sie die Datei in den main Branch.
 
 ## 2. Git verwenden
 
