@@ -30,10 +30,8 @@ dotnet run
 ## Dockerfile verwenden
 - Sie haben ein vorgefertigtes Image für ihre Datenbank.
 - Erstellen Sie ein eigenes Image, erstellen Sie dazu ein `Dockerfile`.
-- Das Ziel ist ein eigenes Image, das beim Starten einige Tabellen und Daten anlegt. 
+- Ziel: Beim Starten des Containers werden automatisch einige Tabellen und Daten angelegt. 
 - Folgen Sie dieser Anleitung: https://dev.to/sumana2001/build-a-custom-mysql-docker-container-404f
-- Weitere DevOps Aufgaben:
-  - Automatische Backup-Routinen: Integrieren Sie Skripte oder Mechanismen, um regelmässig Backups der Datenbank zu erstellen
  
 ## Weitere Aufgaben für eigenes Dockerfile 
 - **Backup**: Schreiben Sie ein Skript das ein Backup der Datenbank erstellt (mysql dump). Kopieren Sie im Dockerfile dieses Skript in ihr Datenbank Image. Es sollte so sein, dass das Skript im Datenbank Container ausführbar ist. Verwenden Sie _crontab_, um automatisch jede Woche ein Backup zu erstellen. 
