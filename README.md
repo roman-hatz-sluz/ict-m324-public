@@ -70,3 +70,9 @@ Installieren Sie act selbst.
 - `act`
   Dieser Befehl führt den Standard-GitHub Actions Workflow (on: push) in Ihrer ci.yml oder einer anderen Workflow-Datei aus.
 - `act pull_request`: Ausführen Sie den Workflow für Pull Requests.
+
+## Schritt 3.2: TODO 
+- needs verwenden
+- schedule verwenden 
+- Virenscan 
+
