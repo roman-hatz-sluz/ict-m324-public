@@ -1,10 +1,9 @@
 import { generate } from 'random-words';
+import chalk from "chalk"; 
 
-export const sum = (a, b, c) => {
-  return a + b + 1;
+export const sum = (a, b) => {
+  return a + b;
 };
-
-console.log(myUndefinedVariable);
 
 const word = generate();
 console.log(
