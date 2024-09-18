@@ -13,7 +13,7 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
 1. **Erstellen der GitHub Actions Konfigurationsdatei:**
 
    - Erstellen Sie im main branch einen Ordner `.github/workflows` im Root-Verzeichnis des Projekts.
-   - Erstellen Siw eine Datei `ci.yml` in diesem Ordner.
+   - Erstellen Sie eine Datei `ci.yml` in diesem Ordner.
 
 2. **Konfiguration für GitHub Actions (ci.yml):**
 
