@@ -17,7 +17,7 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
 
 2. **Konfiguration für GitHub Actions (ci.yml):**
 
-   Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein, um bei jedem PR das Linting, Formatting und Testing auszuführen:
+   Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein
 
    ```yaml
    name: CI
@@ -46,7 +46,9 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
            ...
    ```
 
-3. Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
+3. Erweitern Sie die Konfiguration, um automatischbei jedem PR das Linting, Formatting und Testing auszuführen. Verwenden Sie beim Formatter das Flag `--check`.
+4. Verwenden Sie beim Formatter das Flag `--check`.
+5. Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
 
 ## (2) Verwendung von act für lokales Ausführen von GitHub Actions
 
@@ -71,8 +73,31 @@ Installieren Sie act selbst.
   Dieser Befehl führt den Standard-GitHub Actions Workflow (on: push) in Ihrer ci.yml oder einer anderen Workflow-Datei aus.
 - `act pull_request`: Ausführen Sie den Workflow für Pull Requests.
 
-## Schritt 3.2: TODO 
-- needs verwenden
-- schedule verwenden 
-- Virenscan 
+3. Testen Sie ihren Workflow aus (1) mit act.
 
+- Bauen Sie Linter, Formatter und Testing Fehler ein, um den Workflow zu testen.
+- Entfernen Sie die Fehler anschliessend wieder.
+
+4. Testen Sie ihren Workflow auf GitHub aus.
+
+- Pushen Sie ihren main Branch und erstellen Sie einen neuen Branch und einen Pull Request.
+- Öffnen Sie das Actions Log auf GitHub. Der Link sollte so aussehen: https://github.com/roman-hatz-sluz/ict-m324/actions/. Sie sehen hier alle Actions, die Sie ausgeführt haben.
+- Öffnen Sie Pull Requests auf GitHub. Der Link sollte so aussehen: https://github.com/roman-hatz-sluz/ict-m324/pulls. Klicken Sie auf ihren Pull Request und suchen Sie die Ausgabe ihres Workflows.
+
+## (3) More to do
+
+1. Virenscanner
+
+- Fügen Sie einen Job hinzu, um Viren zu scannen. Verwenden Sie an der richtigen Stelle: `- uses: 'hugoalh/scan-virus-ghaction@latest'`
+- Verwenden Sie an der richtigen Stelle `if: 1 == 2` um nur den neuen Job zu starten.
+
+2. Fun with GitHub Actions
+
+- Immer wenn ein Pull Request geöffnet wird, soll automatisch ein Kommentar hinzugefügt werden.
+- Verwenden Sie diese Action https://github.com/marketplace/actions/comment-pull-request
+- Erstellen Sie im Ordner `.github/workflows` eine Datei Datei `pr-comment.yml`.
+- Verwenden Sie diesen Code `uses: thollander/actions-comment-pull-request@v2`
+
+3. Free Choice
+
+- Suchen Sie eine beliebige Action auf https://github.com/marketplace?type=actions und installieren Sie diese.
