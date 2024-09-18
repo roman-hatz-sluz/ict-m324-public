@@ -10,14 +10,14 @@ Implementieren Sie GitHub Actions, um die Automatisierung von Linting, Formattin
 
 Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
 
-1. **Erstellen der GitHub Actions Konfigurationsdatei:**
+### Erstellen der GitHub Actions Konfigurationsdatei
 
-   - Erstellen Sie im main branch einen Ordner `.github/workflows` im Root-Verzeichnis des Projekts.
-   - Erstellen Sie eine Datei `ci.yml` in diesem Ordner.
+- Erstellen Sie im main branch einen Ordner `.github/workflows` im Root-Verzeichnis des Projekts.
+- Erstellen Sie eine Datei `ci.yml` in diesem Ordner.
 
-2. **Konfiguration für GitHub Actions (ci.yml):**
+### Konfiguration für GitHub Actions (ci.yml)
 
-   Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein
+Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein
 
 ```yaml
 name: CI
@@ -46,9 +46,11 @@ jobs:
         run: npm run lint
 ```
 
-3. Erweitern Sie die Konfiguration, um automatischbei jedem PR das Linting, Formatting und Testing auszuführen. Verwenden Sie beim Formatter das Flag `--check`.
-4. Verwenden Sie beim Formatter das Flag `--check`.
-5. Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
+### Konfiguration erweitern
+
+- Erweitern Sie die Konfiguration, um automatischbei jedem PR das Linting, Formatting und Testing auszuführen. Verwenden Sie beim Formatter das Flag `--check`.
+- Verwenden Sie beim Formatter das Flag `--check`.
+- Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
 
 ## (2) Verwendung von act für lokales Ausführen von GitHub Actions
 
@@ -59,26 +61,27 @@ Führen Sie GitHub Actions lokal aus, um schneller zu testen und zu debuggen, oh
 Installieren Sie Docker auf Ihrem Rechner, da act Docker-Container verwendet, um GitHub Actions Workflows auszuführen.
 Installieren Sie act selbst.
 
-1. Installation von act
+### Installation von act
 
 - Installation über Homebrew (macOS/Linux): `brew install act`
 - Installation über curl (macOS/Linux/WSL): `curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash`
 - Installation auf Windows:Laden Sie das Binary von der Releases-Seite von act herunter: https://github.com/nektos/act/releases
   Fügen Sie den Installationspfad zur Umgebungsvariable PATH hinzu.
 
-2. Verwendung von act
-   Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
+### Verwendung von act
+
+Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
 
 - `act`
   Dieser Befehl führt den Standard-GitHub Actions Workflow (on: push) in Ihrer ci.yml oder einer anderen Workflow-Datei aus.
 - `act pull_request`: Ausführen Sie den Workflow für Pull Requests.
 
-3. Testen Sie ihren Workflow aus (1) mit act.
+### Testen Sie ihren Workflow aus (1) mit act.
 
 - Bauen Sie Linter, Formatter und Testing Fehler ein, um den Workflow zu testen.
 - Entfernen Sie die Fehler anschliessend wieder.
 
-4. Testen Sie ihren Workflow auf GitHub aus.
+### Testen Sie ihren Workflow auf GitHub aus.
 
 - Pushen Sie ihren main Branch und erstellen Sie einen neuen Branch und einen Pull Request.
 - Öffnen Sie das Actions Log auf GitHub. Der Link sollte so aussehen: https://github.com/roman-hatz-sluz/ict-m324/actions/. Sie sehen hier alle Actions, die Sie ausgeführt haben.
@@ -86,12 +89,12 @@ Installieren Sie act selbst.
 
 ## (3) More to do
 
-1. Virenscanner
+### Virenscanner
 
 - Fügen Sie einen Job hinzu, um Viren zu scannen. Verwenden Sie an der richtigen Stelle: `- uses: 'hugoalh/scan-virus-ghaction@latest'`
 - Verwenden Sie an der richtigen Stelle `if: 1 == 2` um nur den neuen Job zu starten.
 
-2. Fun with GitHub Actions
+### Fun with GitHub Actions
 
 - Immer wenn ein Pull Request geöffnet wird, soll automatisch ein Kommentar hinzugefügt werden.
 - Verwenden Sie diese Action https://github.com/marketplace/actions/comment-pull-request
