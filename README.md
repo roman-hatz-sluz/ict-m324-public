@@ -19,32 +19,32 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
 
    Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein
 
-   ```yaml
-   name: CI
+```yaml
+name: CI
 
-   on:
-     pull_request:
-       branches:
-         - main
+on:
+  pull_request:
+    branches:
+      - main
 
-   jobs:
-     lint-format-test:
-       runs-on: ubuntu-latest
+jobs:
+  lint-format-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-       steps:
-         - name: Checkout code
-           uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
 
-         - name: Set up Node.js
-           uses: actions/setup-node@v2
-           with:
-             node-version: '18.x'
+      - name: Install dependencies
+        run: npm install
 
-         - name: Install dependencies
-           run: npm install
-
-           ...
-   ```
+      - name: Run linter
+        run: npm run lint
+```
 
 3. Erweitern Sie die Konfiguration, um automatischbei jedem PR das Linting, Formatting und Testing auszuführen. Verwenden Sie beim Formatter das Flag `--check`.
 4. Verwenden Sie beim Formatter das Flag `--check`.
@@ -61,10 +61,10 @@ Installieren Sie act selbst.
 
 1. Installation von act
 
-   - Installation über Homebrew (macOS/Linux): `brew install act`
-   - Installation über curl (macOS/Linux/WSL): `curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash`
-   - Installation auf Windows:Laden Sie das Binary von der Releases-Seite von act herunter: https://github.com/nektos/act/releases
-     Fügen Sie den Installationspfad zur Umgebungsvariable PATH hinzu.
+- Installation über Homebrew (macOS/Linux): `brew install act`
+- Installation über curl (macOS/Linux/WSL): `curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash`
+- Installation auf Windows:Laden Sie das Binary von der Releases-Seite von act herunter: https://github.com/nektos/act/releases
+  Fügen Sie den Installationspfad zur Umgebungsvariable PATH hinzu.
 
 2. Verwendung von act
    Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
@@ -97,7 +97,3 @@ Installieren Sie act selbst.
 - Verwenden Sie diese Action https://github.com/marketplace/actions/comment-pull-request
 - Erstellen Sie im Ordner `.github/workflows` eine Datei Datei `pr-comment.yml`.
 - Verwenden Sie diesen Code `uses: thollander/actions-comment-pull-request@v2`
-
-3. Free Choice
-
-- Suchen Sie eine beliebige Action auf https://github.com/marketplace?type=actions und installieren Sie diese.
