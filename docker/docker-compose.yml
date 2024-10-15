@@ -1,0 +1,27 @@
+services:
+  mysql-laravel-demo:
+    image: mysql:latest
+    container_name: mysql-laravel-demo
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+    ports:
+      - "3306:3306"
+
+  laravel-ipt-demo:
+    image: docker.io/bitnami/laravel:latest
+    container_name: laravel-ipt-demo-container
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST=mysql-laravel-demo
+      - DB_PORT=3306
+      - DB_USERNAME=demo
+      - DB_PASSWORD=demo
+      - DB_DATABASE=demo
+    volumes:
+      - "../laravel-app:/app"
+    depends_on:
+      - mysql-laravel-demo
