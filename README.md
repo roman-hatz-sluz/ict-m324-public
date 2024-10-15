@@ -8,7 +8,7 @@ Implementieren Sie GitHub Actions, um die Automatisierung von Linting, Formattin
 
 ### Einrichtung der GitHub Actions
 
-Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe.
+Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können Sie die Musterlösung in diesem Repo verwenden. 
 
 ### Erstellen der GitHub Actions Konfigurationsdatei
 
