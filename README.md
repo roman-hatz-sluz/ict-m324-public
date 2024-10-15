@@ -8,7 +8,7 @@ Implementieren Sie GitHub Actions, um die Automatisierung von Linting, Formattin
 
 ### Einrichtung der GitHub Actions
 
-Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können Sie die Musterlösung in diesem Repo verwenden. 
+Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können Sie die Musterlösung in diesem Repo verwenden.
 
 ### Erstellen der GitHub Actions Konfigurationsdatei
 
@@ -17,7 +17,7 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können 
 
 ### Konfiguration für GitHub Actions (ci.yml)
 
-- Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein. 
+- Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein.
 
 ```yaml
 name: CI
@@ -45,13 +45,15 @@ jobs:
       - name: Run linter
         run: npm run lint
 ```
-- Recherchieren Sie mit dem Skript und weiteren geeigneten Quellen was auf jeder einzelnen Zeile passiert. 
+
+- Recherchieren Sie mit dem Skript und weiteren geeigneten Quellen was auf jeder einzelnen Zeile passiert.
 - Ändern Sie die Bezeichungen bei `name` und verwenden Sie einen eigenen Namen für `lint-format-test`.
-- Weshalb ist `run: npm install` nicht optimal für einen Deployment Prozess? Es sollte ein anderer NPM Befehl verwendet werden. 
+- Weshalb ist `run: npm install` nicht optimal für einen Deployment Prozess? Es sollte ein anderer NPM Befehl verwendet werden.
 
 ### Konfiguration testen
-- Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
-- Es sollte folgendes passieren:
+
+- Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) bei GitHub erstellen.
+- Es sollte folgendes passieren: Wenn es keine Fehler beim Linting, Formatter und Testing gibt, sollte der Merge Button grün werden und Sie können den Branch mergen.
 
 ## (2) Verwendung von act für lokales Ausführen von GitHub Actions
 
@@ -60,7 +62,6 @@ Führen Sie GitHub Actions lokal aus, um schneller zu testen und zu debuggen, oh
 ### Voraussetzungen
 
 Installieren Sie Docker auf Ihrem Rechner, da act Docker-Container verwendet, um GitHub Actions Workflows auszuführen.
-Installieren Sie act selbst.
 
 ### Installation von act
 
@@ -93,7 +94,7 @@ Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
 ### Virenscanner
 
 - Fügen Sie einen Job hinzu, um Viren zu scannen. Verwenden Sie an der richtigen Stelle: `- uses: 'hugoalh/scan-virus-ghaction@latest'`
-- Verwenden Sie an der richtigen Stelle `if: 1 == 2` um nur den neuen Job zu starten.
+- Wie können Sie die anderen Jobs skippen, und nur den neuen Job ausführen? Tipp: Verwenden Sie an der richtigen Stelle `if: 1 == 2`.
 
 ### Fun with GitHub Actions
 
@@ -101,3 +102,7 @@ Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
 - Verwenden Sie diese Action https://github.com/marketplace/actions/comment-pull-request
 - Erstellen Sie im Ordner `.github/workflows` eine Datei Datei `pr-comment.yml`.
 - Verwenden Sie diesen Code `uses: thollander/actions-comment-pull-request@v2`
+
+### Even more fun with GitHub Actions
+
+- Finden Sie bei https://github.com/marketplace/actions/ eine beliebige weitere Action und installieren Sie diese.
