@@ -17,8 +17,10 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können 
 
 ### Konfiguration für GitHub Actions (ci.yml)
 
-Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein
-
+Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein. 
+- Recherchieren Sie mit dem Skript und weiteren geeigneten Quellen was auf jeder einzelnen Zeile passiert. 
+- Ändern Sie die Bezeichungen bei `name` und verwenden Sie einen eigenen Namen für `lint-format-test`.
+- Weshalb ist `run: npm install` nicht optimal für einen Deployment Prozess? Es sollte ein anderer NPM Befehl verwendet werden. 
 ```yaml
 name: CI
 
