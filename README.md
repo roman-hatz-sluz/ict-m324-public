@@ -17,10 +17,8 @@ Verwenden Sie ihr GitHub Repository aus der letzten Aufgabe. Alternativ können 
 
 ### Konfiguration für GitHub Actions (ci.yml)
 
-Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein. 
-- Recherchieren Sie mit dem Skript und weiteren geeigneten Quellen was auf jeder einzelnen Zeile passiert. 
-- Ändern Sie die Bezeichungen bei `name` und verwenden Sie einen eigenen Namen für `lint-format-test`.
-- Weshalb ist `run: npm install` nicht optimal für einen Deployment Prozess? Es sollte ein anderer NPM Befehl verwendet werden. 
+- Fügen Sie folgende Konfiguration in die `ci.yml`-Datei ein. 
+
 ```yaml
 name: CI
 
@@ -47,12 +45,13 @@ jobs:
       - name: Run linter
         run: npm run lint
 ```
+- Recherchieren Sie mit dem Skript und weiteren geeigneten Quellen was auf jeder einzelnen Zeile passiert. 
+- Ändern Sie die Bezeichungen bei `name` und verwenden Sie einen eigenen Namen für `lint-format-test`.
+- Weshalb ist `run: npm install` nicht optimal für einen Deployment Prozess? Es sollte ein anderer NPM Befehl verwendet werden. 
 
-### Konfiguration erweitern
-
-- Erweitern Sie die Konfiguration, um automatischbei jedem PR das Linting, Formatting und Testing auszuführen. Verwenden Sie beim Formatter das Flag `--check`.
-- Verwenden Sie beim Formatter das Flag `--check`.
+### Konfiguration testen
 - Testen Sie ihre GitHub Action, indem Sie einen Pull Request (PR) erstellen.
+- Es sollte folgendes passieren:
 
 ## (2) Verwendung von act für lokales Ausführen von GitHub Actions
 
