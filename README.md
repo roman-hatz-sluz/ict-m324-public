@@ -106,3 +106,4 @@ Sobald act installiert ist, können Sie Ihre GitHub Actions lokal ausführen.
 ### Even more fun with GitHub Actions
 
 - Finden Sie bei https://github.com/marketplace/actions/ eine beliebige weitere Action und installieren Sie diese.
+- Verwenden Sie den Event `schedule` in ci.yml.
