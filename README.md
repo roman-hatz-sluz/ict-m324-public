@@ -64,11 +64,10 @@ Führen Sie GitHub Actions lokal aus, um schneller zu testen und zu debuggen, oh
 Installieren Sie Docker auf Ihrem Rechner, da act Docker-Container verwendet, um GitHub Actions Workflows auszuführen.
 
 ### Installation von act
-
+- https://nektosact.com/installation/ 
 - Installation über Homebrew (macOS/Linux): `brew install act`
 - Installation über curl (macOS/Linux/WSL): `curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash`
-- Installation auf Windows:Laden Sie das Binary von der Releases-Seite von act herunter: https://github.com/nektos/act/releases
-  Fügen Sie den Installationspfad zur Umgebungsvariable PATH hinzu.
+- Installation auf Windows: Folgen Sie der Anleitung.  
 
 ### Verwendung von act
 
